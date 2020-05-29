@@ -36,6 +36,7 @@ def drawBoard(board):
 
 def playGame():
   """Implements the logic of the game."""
+  drawBoard(current_board)
   curr_player = "1"
   occupied_columns = 0  
   while(True):
@@ -171,5 +172,4 @@ def checkSecondDiagonalCountForWin(col, row, player):
   return False
 
 
-drawBoard(current_board)
 playGame()
